@@ -1,0 +1,8 @@
+pymysql
+pandas
+pytest
+click
+mysql-connector-python
+allure-pytest
+sqlalchemy
+sqlalchemy-utils
