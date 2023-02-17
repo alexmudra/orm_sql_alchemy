@@ -16,3 +16,4 @@ result = connect.execute(query)
 result.fetchall()
 
 result in console: [(1, 'Kolo', 'Kyiv, Sahaidachnogo st 2'), (2, 'ATB', 'Kyiv, Dovbusha st 10'), (3, 'Silpo', 'Teatralna street 45'), (4, 'Kolo', 'Kyiv, Sahaidachnogo st 2'), (5, 'ATB', 'Kyiv, Dovbusha st 10'), (6, 'Silpo', 'Teatralna street 45'), (7, 'Kolo', 'Kyiv, Sahaidachnogo st 2'), (8, 'ATB', 'Kyiv, Dovbusha st 10'), (9, 'Silpo', 'Teatralna street 45')]
+
