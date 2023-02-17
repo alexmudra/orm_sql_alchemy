@@ -1,0 +1,18 @@
+documentation -> https://docs.sqlalchemy.org/en/14/core/sqlelement.html#sqlalchemy.sql.expression.text
+
+DO IN COMMANDS IN PYTHON CONSOLE:
+
+from sqlalchemy import create_engine
+from sqlalchemy import text
+
+
+CREATE CONNECTION TO DB:
+mysql_engine = create_engine('mysql+pymysql://root:koba@localhost/local_koba')
+connect = mysql_engine.connect()
+
+DO QUERY TO DB:
+query = text('SELECT * FROM shop')
+result = connect.execute(query)
+result.fetchall()
+
+result in console: [(1, 'Kolo', 'Kyiv, Sahaidachnogo st 2'), (2, 'ATB', 'Kyiv, Dovbusha st 10'), (3, 'Silpo', 'Teatralna street 45'), (4, 'Kolo', 'Kyiv, Sahaidachnogo st 2'), (5, 'ATB', 'Kyiv, Dovbusha st 10'), (6, 'Silpo', 'Teatralna street 45'), (7, 'Kolo', 'Kyiv, Sahaidachnogo st 2'), (8, 'ATB', 'Kyiv, Dovbusha st 10'), (9, 'Silpo', 'Teatralna street 45')]
